@@ -54,7 +54,7 @@ CC = gcc
 CC_FLAGS = -c -Wall -Wextra -Werror
 
 $(NAME): $(OBJS)
-	$(CC) $(SRCS) libft.h $(CC_FLAGS)
+	$(CC) $(SRCS) $(CC_FLAGS)
 	ar r $(NAME) $(OBJS)
 
 all: $(NAME)
